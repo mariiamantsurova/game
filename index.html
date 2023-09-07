@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles/environment-styles.css">
+		<link rel="stylesheet" href="./styles/cat-styles.css">
+		<link rel="stylesheet" href="./styles/global.css">
+		<link rel="stylesheet" href="./styles/enemy.css">
+	</head>
+
+	<body>
+		<div class="game-container">
+			<span id="text-wrapper" class=" text-wrapper">
+			</span>
+			<h1 id="rules" style="display: none">Press Enter to get Started</h1>
+			<div class="canvas-wrapper">
+				<canvas class="environment first-layer"></canvas>
+				<canvas id="environment" class="environment second-layer"></canvas>
+				<canvas id="environment" class="environment third-layer"></canvas>
+				<canvas id="cat"></canvas>
+				<span id="enemy"></span>
+				<audio src="./sound/jump.mp3" id="jump"></audio>
+			</div>
+			<span id="text2-wrapper" class=" text-wrapper">
+			</span>
+			<h1 id="rules2" style="display: none">Press Space to jump</h1>
+		</div>
+	</body>
+	<script type="module" src="./index.js"></script>
+
+</html>

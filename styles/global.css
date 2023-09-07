@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "Pixel";
+	src: url(../font/Pixel.ttf) format("truetype");
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	font-family: "Pixel", sans-serif;
+	word-spacing: 10px;
+	background: #e0ac9e;
+}
+
+.game-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.canvas-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.text-wrapper {
+	color: #a1604e;
+	font-size: 30px;
+}

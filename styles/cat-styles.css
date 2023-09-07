@@ -1,0 +1,28 @@
+#cat {
+	position: absolute;
+	width: 100px;
+	height: 86px;
+	top: 250px;
+	left: 50px;
+}
+
+.jump {
+	animation: jump 0.3s linear;
+}
+@keyframes jump {
+	0% {
+		top: 250px;
+	}
+	30% {
+		top: 180px;
+	}
+	50% {
+		top: 150px;
+	}
+	80% {
+		top: 180px;
+	}
+	100% {
+		top: 250px;
+	}
+}

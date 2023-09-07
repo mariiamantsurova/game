@@ -1,0 +1,36 @@
+.environment {
+	width: 770px;
+	height: 407px;
+	position: relative;
+}
+.first-layer {
+	background: #93c3cc;
+}
+.second-layer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	background: url(../src/environment.PNG);
+}
+.third-layer {
+	width: 786px;
+	height: 430px;
+	position: absolute;
+	left: -10px;
+	top: -6px;
+	z-index: 6;
+	background: url(../src/border.png);
+}
+.playing {
+	animation: animatedBackground 4s linear infinite;
+}
+
+@keyframes animatedBackground {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: -770px 0%;
+	}
+}

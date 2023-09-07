@@ -1,0 +1,17 @@
+#enemy {
+	position: absolute;
+	width: 20px;
+	height: 70px;
+	background: red;
+	top: 260px;
+	right: -100px;
+	animation: moving 1s infinite linear;
+}
+@keyframes moving {
+	0% {
+		right: -100px;
+	}
+	100% {
+		right: 770px;
+	}
+}
