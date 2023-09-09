@@ -5,6 +5,9 @@
 	background: red;
 	top: 260px;
 	right: -100px;
+}
+
+.moving {
 	animation: moving 1s infinite linear;
 }
 @keyframes moving {

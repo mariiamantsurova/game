@@ -1,6 +1,6 @@
 .environment {
 	width: 770px;
-	height: 407px;
+	height: 425px;
 	position: relative;
 }
 .first-layer {
@@ -18,7 +18,7 @@
 	height: 430px;
 	position: absolute;
 	left: -10px;
-	top: -6px;
+	top: -5px;
 	z-index: 6;
 	background: url(../src/border.png);
 }
