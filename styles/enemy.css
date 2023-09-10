@@ -1,9 +1,8 @@
 #enemy {
 	position: absolute;
-	width: 20px;
-	height: 70px;
-	background: red;
-	top: 260px;
+	width: 86.4px;
+	height: 81.6px;
+	top: 245px;
 	right: -100px;
 }
 

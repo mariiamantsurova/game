@@ -1,7 +1,9 @@
 import Cat from "./Cat.js";
+import Enemy from "./Enemy.js";
 const catCanvas = document.getElementById("cat");
 const enemyCanvas = document.getElementById("enemy");
 const cat = new Cat(catCanvas, 7);
+const enemy = new Enemy(enemyCanvas, 12);
 let request;
 
 //functions
@@ -15,6 +17,7 @@ let isAlive = setInterval(() => {
 }, 10);
 function animate() {
 	cat.draw();
+	enemy.draw();
 	request = window.requestAnimationFrame(animate);
 }
 function stopAnimation() {
@@ -55,6 +58,7 @@ function pauseAnimation(element) {
 }
 const update = (e) => {
 	cat?.update(e.key);
+	enemy?.update(e.key);
 };
 //event listener
 

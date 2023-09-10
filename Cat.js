@@ -41,9 +41,7 @@ export default class Cat {
 				this.maxFramesX = 2;
 				this.isPlaying = true;
 				const environment = document.getElementById("environment");
-				const enemy = document.getElementById("enemy");
 				environment.classList.add("playing");
-				enemy.classList.add("moving");
 			}
 		} else if (key === " " && this.isPlaying) {
 			if (this.frameY !== 2 && !this.canvas.classList.contains("jump")) {
