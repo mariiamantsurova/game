@@ -12,7 +12,6 @@ export default class Enemy {
 		this.maxFramesX = 1;
 		this.gameFrame = 0;
 		this.staggerFrame = staggerFrame;
-		this.animationDelaySeconds = 0;
 	}
 	draw() {
 		this.ctx.clearRect(0, 0, this.spriteWidth, this.spriteHeight);
@@ -21,20 +20,13 @@ export default class Enemy {
 			if (this.frameX < this.maxFramesX) this.frameX++;
 			else this.frameX = 0;
 		}
-		this.animationDelay();
 		this.gameFrame++;
 	}
 	update(key) {
 		if (key === "Enter") {
+			2;
 			this.draw();
 			this.canvas.classList.add("moving");
 		}
-	}
-	animationDelay() {
-		const randomValue = Math.random() * 4;
-		setInterval(() => {
-			this.canvas.style.animationDelay = `${randomValue}s`;
-			this.animationDelaySeconds = randomValue;
-		}, this.animationDelaySeconds + 1);
 	}
 }
